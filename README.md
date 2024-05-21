@@ -1,54 +1,78 @@
 # README: Loan Data Analysis
-This README file provides an overview of the Python notebook used for analyzing loan data. The notebook includes various exploratory data analysis (EDA) tasks, visualization techniques, and the creation of derived columns to better understand the dataset.
+Overview
+This project involves analyzing loan data to identify likely defaulters based on various financial and demographic factors. The analysis uses Python and its data analysis libraries, primarily focusing on univariate and bivariate analyses to derive business insights and recommendations.
 
-Table of Contents
-1.Introduction
-2.Data Loading
-3.Data Cleaning
-4.Exploratory Data Analysis (EDA)
-5.Derived Columns
-6.Additional Test Cases
-7.Conclusion
+Files in the Project
+ 1. Nikhil-Nishant.ipynb: The Jupyter Notebook containing the analysis code and visualizations.
+ 2. Data_Dictionary.xlsx: The data dictionary providing descriptions of each column in the loan dataset.
+ 3. loan.csv: The loan dataset used for analysis.
 
-1.) Introduction:-
-The purpose of this notebook is to perform a detailed analysis of a loan dataset. This includes understanding the distribution of various features, identifying relationships between different variables, and creating derived columns for deeper insights.
+Key Objectives
+ - Identify likely defaulters using univariate and bivariate analyses.
+ - Provide business recommendations to mitigate default risks.
+ - Visualize key relationships between loan variables to derive actionable insights.
 
-2.) Data Loading:-
-The notebook begins by loading the necessary libraries and the loan dataset. The data is read from a CSV file and an Excel file containing the data dictionary.
+Analysis Steps and Observations
 
-3.) Data Cleaning:-
-Data cleaning steps include:
+Univariate Analysis
 
-4.) Handling missing values.
-Converting data types (e.g., stripping percentage signs from interest rates and converting them to numeric types).
+1.Loan Purpose:
 
-5.) Exploratory Data Analysis (EDA):-
-The EDA section includes various visualizations to understand the distribution and relationships between key variables. Some of the key analyses include:
+ -Small Business loans have the highest default rate (~25.98%).
+ -Renewable Energy and Educational loans also show significant default rates (~18.45% and ~17.23%, respectively).
+ -Recommendation: Monitor and apply stricter approval criteria for high-risk loan purposes.
 
-Distribution of loan amounts.
-Interest rates.
-Loan grades.
-Annual income.
+2.Home Ownership:
 
-6.) Derived Columns:-
-The notebook creates derived columns to provide additional insights:
+ -"Other" ownership has the highest default rate (~18.37%), followed by Renters (~15.02%).
+ -Recommendation: Apply higher scrutiny to renters and non-standard home ownership statuses.
 
-Loan to Income Ratio: The ratio of loan amount to annual income.
-Interest Rate Categories: Categorizing interest rates into bins (e.g., low, medium, high).
-Debt-to-Income (DTI) Ratio Categories: Categorizing DTI ratios.
-Annual Income Bins: Binning annual income into categories.
+3.Debt-to-Income (DTI) Ratio:
 
-7.) Additional Test Cases:-
-Additional test cases include:
+ -Higher DTI ratios correlate with higher default likelihood.
+ -Recommendation: Set strict DTI limits for loan approvals and provide financial counseling to high-DTI borrowers.
 
-Employment Length vs. Loan Amount: Analyzing the relationship between employment length and loan amount.
-Loan Amount vs. Loan Term: Analyzing the relationship between loan amount and loan term.
-Loan Amount by State: Analyzing the distribution of loan amounts across different states.
-Distribution of DTI Categories: Analyzing the distribution of different DTI categories.
-Distribution of Annual Income Bins: Analyzing the distribution of different annual income bins.
-Correlation Matrix for Derived Columns: Creating a correlation matrix including the derived columns.
-Loan Amount vs. Loan Purpose: Analyzing the distribution of loan amounts across different loan purposes.
-Heatmap of Correlation between Numerical Variables: Visualizing the correlation between key numerical variables using a heatmap.
+4.Loan to Income Ratio:
 
-8.) Conclusion:-
-The notebook concludes with visualizations and analyses that provide a comprehensive understanding of the loan dataset. By creating derived columns and performing various EDA tasks, the notebook helps identify key patterns and insights that can be useful for further analysis or decision-making processes.
+ -Higher loan to income ratios indicate a higher default risk.
+ -Recommendation: Implement caps on loan amounts relative to income.
+
+Bivariate Analysis
+1.Loan Amount vs. Annual Income:
+
+ -Positive correlation between loan amount and annual income.
+ -Charged Off loans are frequent in lower income brackets with higher loan amounts.
+ -Recommendation: Limit loan amounts for low-income borrowers to reduce risk.
+
+2.Debt-to-Income Ratio vs. Interest Rate:
+
+ -Higher interest rates associate with higher DTI ratios and higher defaults.
+ -Recommendation: Adjust interest rates based on DTI ratios and implement risk-based pricing.
+3.Annual Income vs. Debt-to-Income Ratio:
+
+ -Higher DTI ratios correlate with a higher presence of Charged Off loans.
+ -Recommendation: Regular monitoring of high-DTI borrowers regardless of income level.
+4.Employment Length vs. Loan Amount:
+
+-Median loan amounts are consistent across employment lengths, slightly higher for 10+ years.
+-Recommendation: Factor in employment stability but consider alongside other variables.
+
+Business Recommendations
+1.Risk Management:
+
+-Focus on high-risk categories (Small Business loans, high DTI, high loan to income ratios).
+-Implement stricter approval processes and provide financial counseling.
+2.Interest Rate Strategy:
+
+ -Adjust interest rates based on a combination of risk factors to manage risk better.
+3.Loan Approval Criteria:
+
+ -Refine loan approval criteria using insights from the analysis to prevent overextension of borrowers.
+4.Financial Counseling:
+
+ -Offer support to high-risk borrowers to help manage their debt and reduce defaults.
+
+Conclusion
+This analysis helps identify potential defaulters by examining various financial indicators and relationships. The insights and recommendations provided aim to improve loan approval processes, manage risks effectively, and support borrowers in maintaining their financial health.
+
+For more detailed analysis and visualizations, refer to the Nikhil-Nishant.ipynb notebook.
