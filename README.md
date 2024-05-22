@@ -110,10 +110,8 @@ Loan data set of a consumer finance company is provided which contains the compl
 
 > ## Files in the Project
  1. **Nikhil-Nishant.ipynb:** The Jupyter Notebook containing the analysis code and visualizations.
- 2. **Data_Dictionary.xlsx:** The data dictionary providing descriptions of each column in the loan dataset.
- 3. **loan.csv:** The loan dataset used for analysis.
- 4. **README.md** File for High level Project overview & approach.
- 5. **Nikhil_Nishant.pdf** File about the Analysis and Conclusions of EDA performed in business terms.
+ 2. **README.md** File for High level Project overview & approach.
+ 3. **Lending Club Case study.pdf** File about the Analysis and Conclusions of EDA performed in business terms.
 
 > ## Contributors
 - Nikhil Gupta
