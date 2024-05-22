@@ -5,12 +5,12 @@
 
 >## Table of Contents
 * [General Info](#general-information)
-* [Approach](Approach)
-* [Analysis](analysis-steps-and-observations)
-* [Business Recommendations](business-recommendations)
+* [Approach](#Approach)
+* [Analysis](#analysis-steps-and-observations)
+* [Business Recommendations](#business-recommendations)
 * [Conclusions](#conclusion)
 * [Technologies Used](#technologies)
-* [Files](files-in-the-project)
+* [Files](#files-in-the-project)
 * [Contributors](#contributors)
 
 >## General Information
